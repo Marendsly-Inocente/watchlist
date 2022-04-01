@@ -7,18 +7,9 @@ import { Add } from './components/Add';
 import './App.css';
 import './font-awesome/css/all.min.css';
 import {GlobalProvider} from './context/GlobalState';
-import {Movie} from './components/Movie'
+import {Movie} from './components/Movie';
 
-class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      movie: [],
-      searchTerm: ''
-    }
-  }
-
-render () {
+function App() {
   return (
   <GlobalProvider>
     <Router>
@@ -44,6 +35,5 @@ render () {
     </GlobalProvider>
   );
   }
-}
 
 export default App;
